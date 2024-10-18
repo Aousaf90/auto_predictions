@@ -1,0 +1,7 @@
+ENVIRONMENT=""
+JWT_SECRET=""
+SMTP_SERVER=""
+SMTP_PORT=
+SMTP_FROM_USER="focastIQ"
+SMTP_FROM_ADDRESS="info@cyberifyportfolio.com"
+SMTP_PASSWORD="Cyberify@123#"

@@ -1,0 +1,53 @@
+/* Ensure full height */
+.layout-container {
+  height: 100vh;
+}
+
+/* Sidebar with 20% width */
+.sidebar {
+  width: 20%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  transition: width 0.3s ease;
+}
+
+/* Dashboard layout takes the remaining space */
+.dashboard-layout {
+  flex: 1;
+  background-color: green;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Hide the sidebar and show drawer on small screens */
+.drawer-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* On small screens, show the drawer button */
+  .drawer-toggle {
+    display: block;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Sidebar should be hidden by default */
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  /* When sidebar is open */
+  .sidebar.open {
+    width: 250px;
+    z-index: 100;
+    height: 100vh;
+  }
+}
